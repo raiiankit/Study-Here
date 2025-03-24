@@ -18,24 +18,7 @@ export default function Semester() {
   };
 
   return (
-    <>
-      {/* Navbar */}
-      <nav className="bg-gray-900 text-white py-4">
-        <div className="container mx-auto flex justify-between items-center px-6">
-          <div className="text-lg font-bold">Study Here</div>
-          <ul className="flex gap-6 text-sm">
-            <li className="hover:text-yellow-400 cursor-pointer">
-              <Link href="/">Home</Link>
-            </li>
-            <li className="hover:text-yellow-400 cursor-pointer">Semester</li>
-            <li className="hover:text-yellow-400 cursor-pointer">Contact</li>
-            <li className="hover:text-yellow-400 cursor-pointer">Contributor</li>
-          </ul>
-          <button className="bg-yellow-500 hover:bg-yellow-600 text-gray-900 px-4 py-2 rounded-lg font-bold text-sm">
-            Join Now
-          </button>
-        </div>
-      </nav>
+    <>  
 
       {/* Semester Selection */}
       <div className="container mx-auto text-center my-10">

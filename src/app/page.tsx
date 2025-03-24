@@ -1,38 +1,10 @@
 import Link from "next/link";
 
+
 export default function Pages() {
   return (
     <>
-    <nav className="bg-gray-900 text-white py-4">
-        <div className="container mx-auto flex justify-between items-center px-6">
-
-          <div className="text-lg font-bold">Study Here</div>
-          <ul className="flex gap-6 text-sm">
-            <li className="hover:text-yellow-400 cursor-pointer">Home</li>
-            <li className="hover:text-yellow-400 cursor-pointer">
-                 <Link href="/semester">
-                      Semester
-                       </Link>
-             </li>
-            <li className="hover:text-yellow-400 cursor-pointer">
-            <Link href="/contact">
-                      Contact
-            </Link>
-            </li>
-            <li className="hover:text-yellow-400 cursor-pointer">
-            <Link href="/contributor">
-                      Contributor
-            </Link>
-            </li>
-          </ul>
-
-          <button className="bg-yellow-500 hover:bg-yellow-600 text-gray-900 px-4 py-2 rounded-lg font-bold text-sm">
-            Join Now
-          </button>
-        </div>
-      </nav>
-
-      <div className="min-h-screen bg-gray-50">
+    <div className="min-h-screen bg-gray-50">
       {/* Hero Section */}
       <section className="bg-gradient-to-r from-blue-900 to-indigo-700 text-white py-20 text-center w-screen h-screen pt-40">
         <div className="container mx-auto px-6">
@@ -97,28 +69,7 @@ export default function Pages() {
         </a>
       </section>
     </div>
-
-      {/* Footer Section */}
-      <footer className="bg-gray-900 text-white py-6">
-        <div className="container mx-auto flex flex-col md:flex-row justify-between items-center px-6">
-          {/* Branding */}
-          <div className="text-lg font-bold">Study Here</div>
-
-          {/* Navigation Links */}
-          <ul className="flex gap-6 text-sm">
-            {["About", "Contact"].map((item, index) => (
-              <li key={index} className="hover:text-yellow-400 cursor-pointer">
-                {item}
-              </li>
-            ))}
-          </ul>
-
-          {/* Copyright */}
-          <div className="text-xs text-gray-400 mt-4 md:mt-0">
-            © {new Date().getFullYear()} Study Here. All Rights Reserved.
-          </div>
-        </div>
-      </footer>
+     
     </>
   );
 }
