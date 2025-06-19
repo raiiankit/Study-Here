@@ -9,6 +9,7 @@ export default function SubjectPage({ params }) {
         </h1>
         <p className="text-lg text-white ">
           Study materials and resources for <span className="font-semibold">{decodedSubject}</span> will be available here.
+          
         </p>
       </div>
     );
